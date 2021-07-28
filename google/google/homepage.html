@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Google Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+
+        function picture(){ 
+        var pic = "/google/ilmakiage.jpg"
+        document.getElementById('logo').src = pic.replace('90x90', '225x225');
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
+                <li class="nav-links"><a href="#">Images</a></li>
+                <li class="sign-in"><a href="#">Sign In</a></li>
+            </ul>
+        </nav>   
+    </header>   
+    
+    <div class="google">
+        <a href="#" id="google_logo"><img src="/google/download.png"></a>
+    </div> 
+
+    <div class="form">
+        <form>
+            <label for="form-search"></label>
+            <input type="text" id="form-search" placeholder="Search Google or type URL">
+        </form>
+    </div>
+    <div class= "buttons">  
+        <input type="submit" value="Google Search" id="google_search">
+        <input type="submit" onclick="picture()" value="I'm Feeling Lucky" id="im_feeling_lucky">
+        <img id="logo" src="logo" />
+      </div>
+
+    <footer>
+        <ul class="footer-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li> 
+        </ul>
+        <ul class="footer-middle">    
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>      
+    </footer>  
+  
+    
+</body>
+</html>
